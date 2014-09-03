@@ -1,3 +1,6 @@
+# Creates new object hand, handles all arithmatic
+# in regards to score of the hand,
+# and keeps track of cards per player
 class Hand
   attr_accessor :score, :hand
   def initialize(deck)
@@ -29,9 +32,7 @@ class Hand
   def ace_count(hand)
     number_of_aces = 0
     hand.each do |card|
-      if card.rank == 'A'
-        number_of_aces += 1
-      end
+      number_of_aces += 1 if card.rank == 'A'
     end
     number_of_aces
   end

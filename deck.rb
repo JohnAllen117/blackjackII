@@ -1,9 +1,10 @@
+# Creates a new deck of 52 cards
 class Deck
   def initialize
     @collection = []
     SUITS.each do|suit|
       VALUES.each do |value|
-        @collection << Card.new(value,suit)
+        @collection << Card.new(value, suit)
       end
     end
     @collection.shuffle!
