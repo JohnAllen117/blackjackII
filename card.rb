@@ -1,6 +1,6 @@
 # Creates a new card with a rank and a suit
 class Card
-  attr_accessor :rank, :suit
+  attr_reader :rank, :suit
   def initialize(rank, suit)
     @suit = suit
     @rank = rank
