@@ -2,7 +2,7 @@
 # in regards to score of the hand,
 # and keeps track of cards per player
 class Hand
-  attr_accessor :score, :hand
+  attr_reader :score, :hand
   def initialize(deck)
     @hand = []
     @hand << deck.draw
